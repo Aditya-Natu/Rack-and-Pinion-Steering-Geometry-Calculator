@@ -45,7 +45,7 @@ plot(Ang_inn, Ang_out_ideal)
 hold on
 plot(Ang_inn, Ang_out_real)
 legend('Ideal curve','Actual curve');
-xlabel('inner angle');
-ylabel('outer angle');
+xlabel('Inner angle (rad)');
+ylabel('Outer angle (rad)');
 hold off
 grid on;
