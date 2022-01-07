@@ -1,6 +1,6 @@
 clc
 
-a1=input('What is the initial inclination (degrees) of the imaginary line joining the pin joints on the axle and tie rods? '); 
+a1=input('What is the initial inclination (degrees) of the imaginary line on the knuckle joining the pin joints connecting to the axle and tie rods? '); 
 di=input('How much is max. turning angle for inner wheel (in degrees)? ');
 w=input('How much is distance between two knuckle pins in mm? ');
 c=input('How much is the distance between two axles in mm? '); 
@@ -20,9 +20,9 @@ L = Soln(3);
 D = Soln(2)/L;
 M = sqrt(Soln(1) + D^2 + L^2);
 
-fprintf('Steering arm length is %f mm \n', L);
-fprintf('Tie rod length is %f mm \n', M);
-fprintf('Distance from front axle is %f mm \n', D);
+fprintf('Steering arm length (straight-line distance between the joints connecting to the axle and tie rod) is %f mm \n', L);
+fprintf('Tie rod length (joint to joint) is %f mm \n', M);
+fprintf('Distance between the rack and the front axle is %f mm \n', D);
 
 Ang_inn = linspace(0,Di,1000);
 Ang_out_ideal = acot(w/c + cot(Ang_inn));
@@ -34,6 +34,7 @@ Ang_out_real = acos(Bi.*(Soln(3))./(sqrt((Soln(2)).^2 + (Bi.*Soln(3)).^2))) - a 
 
 v=asin(D/(L+M));
 md=(L+M)*cos(v)-((w-r)/2);
+
 if t>md
     fprintf('This mechanism cannot be used');
 else
