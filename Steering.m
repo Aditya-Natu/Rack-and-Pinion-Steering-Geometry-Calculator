@@ -1,3 +1,5 @@
+%%% Authored by Aditya Natu and Ankit Sharma in Nov 2017 %%%
+
 clc
 
 a1=input('What is the initial inclination (degrees) of the imaginary line on the knuckle joining the pin joints connecting to the axle and tie rods? '); 
