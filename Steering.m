@@ -1,4 +1,4 @@
-%%% Authored by Aditya Natu and verified by Ankit Sharma in Nov 2017 %%%
+%%% Authored by Aditya Natu and verified by Ankit Sharma %%%
 
 clc
 
