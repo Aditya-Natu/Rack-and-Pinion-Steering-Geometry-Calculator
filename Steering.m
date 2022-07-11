@@ -1,4 +1,4 @@
-%%% Code developed by Aditya Natu. Designed mechanism verified against a prototype by Ankit Sharma. %%%
+%%% Developed by Aditya Natu. Tested by Ankit Sharma. %%%
 
 clc
 
